@@ -1,0 +1,80 @@
+.jumbotron {
+  text-align: center;
+  background-color: #78909c;
+  /*background-color: #78909c;*/
+}
+
+.jumbotron h1 {
+  font-weight: bold;
+  font-size: 4em;
+  color: #212121;
+}
+
+.jumbotron p {
+  font-style: italic;
+  font-weight: 100;
+  color: #F5F5F5;
+}
+
+body {
+  /*background-color: #F5F5F5;*/
+  background-color: #78909c;
+  font-family: 'Roboto', sans-serif;
+}
+
+input[type=number].input-number–noSpinners {
+  -moz-appearance: textfield;
+}
+
+input[type=number].input-number–noSpinners::-webkit-inner-spin-button,
+input[type=number].input-number–noSpinners::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.button-wrapper .btn {
+  margin-bottom: 5px;
+}
+
+.input-group-wrapper .input-group {
+  margin-bottom: 5px;
+}
+
+.left-5 {
+  margin-left: 5px;
+}
+
+.right-5 {
+  margin-right: 5px;
+}
+
+.black-background {
+  background-color: #000000;
+}
+
+.white {
+  color: #FFFFFF;
+}
+
+.sup {
+  vertical-align: super;
+  font-size: 0.5em;
+}
+
+#errorBox {
+  min-height: 1em;
+}
+
+.loading-text {
+  text-align: center;
+}
+
+.spinner img {
+  display: block;
+  margin: 0 auto;
+}
+
+.avatarsm {
+  width: 34px;
+  height: 34px;
+}

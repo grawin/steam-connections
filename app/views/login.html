@@ -1,0 +1,19 @@
+<div class="container-fluid">
+  <div id="login" class="row">
+    <div class="col-sm-4 col-sm-offset-4 button-wrapper well">
+      Login via
+      <div class="social-buttons">
+        <a href="?login" target="_self" class="btn btn-primary black-background white" role="button"><span class="socicon-steam right-5"></span>STEAM<span class="sup">&reg</span></a>
+      </div>
+      or
+      <div class="input-group input-group-wrapper">
+        <input role="input" type="text" data-ng-model="newLoginId" class="form-control" id="inputSteamId" placeholder="Steam ID Number" name="steamid" required>
+        <span class="input-group-btn">
+          <button data-ng-click="login()" name="steamidsubmit" class="btn btn-default">Go</button>
+        </span>
+      </div>
+      <div id="errorBox" ng-if="errorMessage">{{ errorMessage }}</div>
+      <button data-ng-click="demo()" name="demosubmit" class="btn btn-primary">View Demo</button>
+    </div>
+  </div>
+</div>

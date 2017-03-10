@@ -1,0 +1,35 @@
+<loading-spinner></loading-spinner>
+<div ng-show='!isLoading' class="container-fluid">
+  <!-- Logged in user info -->
+  <div id="userInfoContainer" class="row">
+    <ul>
+      <li>
+        <img ng-src="{{primaryUser.avatarUrl}}">
+      </li>
+      <li>
+        <span ng-bind="currentUserId"></span>
+      </li>
+      <li>
+        <span ng-bind="primaryUser.name"></span>
+      </li>
+      <li>
+        <span ng-bind="primaryUser.onlineStatus"></span>
+      </li>
+      <li>
+        <a href="http://graw.in/steam/assets/libs/steamauth/logout.php" target="_self" class="btn btn-primary" role="button">Change User</a>
+        <!-- <button data-ng-click="logout()" name="logoutBtn" class="btn btn-primary">Change User</button> -->
+      </li>
+    </ul>
+  </div>
+  <!-- Graph container -->
+  <div id="graphContainer" class="row">
+    <friend-graph></friend-graph>
+  </div>
+  <!-- Friends List -->
+  <div id="friendListContainer" class="row">
+    <div ng-repeat="user in userData" ng-click="drawGraph(user.summary.steamid)">
+      <img class="avatarsm" ng-src="{{user.summary.avatarmedium}}"> {{user.summary.personaname}}
+    </div>
+  </div>
+</div>
+</div>
