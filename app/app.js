@@ -34,5 +34,5 @@ app.config(function ($routeProvider, $locationProvider, $logProvider) {
   $locationProvider.html5Mode(true);
 
   // Disable logging in production.
-  $logProvider.debugEnabled(true);
+  $logProvider.debugEnabled(false);
 });
