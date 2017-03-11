@@ -9,6 +9,8 @@ Users are greeted by a login page with several options. They can login using the
 
 The backend provides two functions: authentication and an interface to query the Steam API using the private key. The authentication portion uses [Steam Auth](https://github.com/SmItH197/SteamAuthentication) a PHP project that uses [Light Open ID](https://github.com/iignatov/LightOpenID). The API querying portion simply looks at a URL parameter for function names and parameters. If you put a URL re-write rule in place it can look something like this /steamapi/friends/:userSteamId.
 
+Steam API keys are available here: https://steamcommunity.com/dev/apikey
+
 ## Limitations
 * Friend lists and other data of users with private profiles cannot be accessed using the Steam Web API.
 * The Steam Web API requires an API key, this means backend infrastructure is needed to hide the key. I selected PHP because my web hosting runs the LAMP stack.
