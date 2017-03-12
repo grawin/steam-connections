@@ -30,6 +30,13 @@ RewriteRule steamapi/(.*)$ steamapi.php?url=$1 [QSA,NC,L]
 </IfModule>
 ```
 
+#### Additional Setup
+Extract [Steam Auth](https://github.com/SmItH197/SteamAuthentication) in assets/libs/steamauth and modify SteamConfig.php to use your Steam API key and domain name.
+
 ## Limitations
 * Friend lists and other data of users with private profiles cannot be accessed using the Steam Web API.
 * The Steam Web API requires an API key, this means backend infrastructure is needed to hide the key. I selected PHP because my web hosting runs the LAMP stack.
+
+## Disclaimers
+* Steam is a registered trademark of the Valve Corporation. See their legal info here: http://store.steampowered.com/legal/
+* Loading icons garnered from Sam Herbert's [SVG Loaders]https://github.com/SamHerbert/SVG-Loaders
