@@ -29,8 +29,6 @@
       <p>See the connections between your friends.</p>
     </div>
     <div data-ng-view></div>
-    <!-- In-house script(s)  -->
-    <script src="assets/js/steam.js"></script>
     <!-- Angular app -->
     <script src="app/app.js"></script>
     <script src="app/controllers/ConnectionsController.js"></script>
