@@ -50,7 +50,7 @@ app.factory('userDataService', ['$http', '$q', 'locationService', function ($htt
             // For internal server error, retry.
             // This is just a make-shift way to handle my cheap hosting.
             // Change this to do whatever you see fit.
-            obj.getFriends(steamId, deferred);
+            obj.getSummary(steamId, deferred)
           } else {
             // For all other errors return empty list.
             deferred.resolve([]);
@@ -175,4 +175,4 @@ app.factory('userDataService', ['$http', '$q', 'locationService', function ($htt
 
   return obj;
 
-}]);
+      }]);
