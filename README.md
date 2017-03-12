@@ -31,7 +31,8 @@ RewriteRule steamapi/(.*)$ steamapi.php?url=$1 [QSA,NC,L]
 ```
 
 #### Additional Setup
-Extract [Steam Auth](https://github.com/SmItH197/SteamAuthentication) in assets/libs/steamauth and modify SteamConfig.php to use your Steam API key and domain name.
+* Extract [Steam Auth](https://github.com/SmItH197/SteamAuthentication) in assets/libs/steamauth and modify SteamConfig.php to use your Steam API key and domain name (alternatively modify it to read the common config.ini file mentioned below).
+* Modify assets/libs/config.ini to contain your Steam API key
 
 ## Limitations
 * Friend lists and other data of users with private profiles cannot be accessed using the Steam Web API.
