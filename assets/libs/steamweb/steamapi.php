@@ -69,18 +69,21 @@ class SteamApi {
     $_SESSION['steamid'] = $steamId;
   }
 
+  // Gets friend list from Steam Web API for the provided Steam ID.
   private static function getFriends($steamId){
     $steamApiKey = Util::getApiKey();
     $url = "http://api.steampowered.com/ISteamUser/GetFriendList/v0001/?key=".$steamApiKey."&steamid=".$steamId."&relationship=friend";
     echo file_get_contents($url);  
   }
 
+  // Gets summary data from Steam Web API for the provided Steam ID.
   private static function getSummary($steamId){
     $steamApiKey = Util::getApiKey();
     echo file_get_contents("http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=".$steamApiKey."&steamids=".$steamId); 
   }
 }
 
+// Main execution point.
 function main() {
   Util::handleSession();
   SteamApi::resolveApiCall();
