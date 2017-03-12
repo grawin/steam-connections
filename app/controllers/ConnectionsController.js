@@ -61,6 +61,16 @@ app.controller('ConnectionsController', ['$scope', '$rootScope', 'loginService',
         .then(function (userData) {
 
           $scope.userData = userData;
+
+          // Store userData map as a list for easy sorting.
+          var userList = [];
+          for (key in userData) {
+            userList.push(userData[key]);
+          }
+          $scope.userList = userList;
+
+          $scope.userListHeight = $scope.userList.length * 42;
+
           $scope.isLoading = false;
           populateGraph();
         })
