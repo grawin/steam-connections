@@ -1,5 +1,5 @@
 # steam-connections
-AngularJS app for visualizing connections between friends on Steam
+AngularJS app for visualizing connections between friends on Valve's Steam game distribution service/social network.
 
 ## Goal
 The goal of this project is to aggregate data from the [Steam Web API](https://developer.valvesoftware.com/wiki/Steam_Web_API) using [AngularJS](https://angularjs.org/) on the front end with [D3.js](https://d3js.org/) and PHP on the backend.
@@ -40,4 +40,4 @@ RewriteRule steamapi/(.*)$ steamapi.php?url=$1 [QSA,NC,L]
 
 ## Disclaimers
 * Steam is a registered trademark of the Valve Corporation. See their legal info here: http://store.steampowered.com/legal/
-* Loading icons garnered from Sam Herbert's [SVG Loaders]https://github.com/SamHerbert/SVG-Loaders
+* Loading icons garnered from Sam Herbert's [SVG Loaders](https://github.com/SamHerbert/SVG-Loaders)
