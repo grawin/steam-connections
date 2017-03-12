@@ -23,8 +23,13 @@
   </div>
   <!-- Friends List -->
   <div id="friendListContainer" class="row">
-    <div class="friendContainer col-md-4" ng-repeat="user in userData" ng-click="drawGraph(user.summary.steamid)">
-      <img class="avatarsm" ng-src="{{user.summary.avatarmedium}}"> {{user.summary.personaname}}
+    <div class="row">
+      <input type="text" placeholder="Friend Search" ng-model="search.summary.personaname">
+    </div>
+    <div class="row" ng-style="{height: userListHeight+'px'}">
+      <div class="friendContainer col-md-4" ng-repeat="user in userList | filter:search" ng-click="drawGraph(user.summary.steamid)">
+        <img class="avatarsm" ng-src="{{user.summary.avatarmedium}}"> {{user.summary.personaname}}
+      </div>
     </div>
   </div>
 </div>

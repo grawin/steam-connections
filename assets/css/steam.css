@@ -83,6 +83,15 @@ input[type=number].input-number–noSpinners::-webkit-outer-spin-button {
   height: 32px;
 }
 
+#friendListContainer {
+  margin-left: 10px
+}
+
+#friendListContainer input {
+  margin-left: 3px;
+  margin-bottom: 3px;
+}
+
 .friendContainer {
   padding-top: 2px;
   padding-left: 2px;
